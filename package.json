@@ -1,0 +1,16 @@
+{
+    "name": "valschion-v12-bot-template",
+    "version": "1.0.0",
+    "description": "Valschion V12 Bot Template",
+    "main": "Server.js",
+    "scripts": {
+        "start": "node Server.js"
+    },
+    "author": "Valschion",
+    "license": "MIT",
+    "dependencies": {
+        "ascii-table": "^0.0.9",
+        "discord.js": "^12.5.3",
+        "fs": "^0.0.2"
+    }
+}
