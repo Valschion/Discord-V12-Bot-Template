@@ -13,7 +13,7 @@ client.on("ready", ()=> {
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 client.categories = fs.readdirSync("./Commands/");
-["command"].forEach(handler => { require(`./Handlers/${handler}`)(client); });
+["Command"].forEach(handler => { require(`./Handlers/${handler}`)(client); });
 
 
 client.on('message', async message => {
