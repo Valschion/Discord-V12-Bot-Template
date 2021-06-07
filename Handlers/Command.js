@@ -10,11 +10,11 @@ module.exports = client => {
       let pull = require(`../Commands/${dir}/${file}`);
       if (pull.name) {
         client.commands.set(pull.name, pull);
-        table.addRow(file, "O -> Çalışıyor");
+        table.addRow(file, "O -> Çalışıyor!");
       } 
       else
       {
-        table.addRow(file, "X -> Komuta Herhangi Bir İsim Verilmemiş Veya İsim Bölümü Yok!" );
+        table.addRow(file, "X -> Hatalı!" );
         continue;
       }
       if (pull.aliases && Array.isArray(pull.aliases))
