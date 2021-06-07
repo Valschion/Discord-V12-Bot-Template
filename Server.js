@@ -15,7 +15,6 @@ client.aliases = new Discord.Collection();
 client.categories = fs.readdirSync("./Commands/");
 ["Command"].forEach(handler => { require(`./Handlers/${handler}`)(client); });
 
-
 client.on('message', async message => {
   const prefixMention = new RegExp(`^<@!?${client.user.id}>( |)$`);
   if (message.content.match(prefixMention)) {
